@@ -1,0 +1,195 @@
+/* Webfont: Yekan */
+@font-face {
+  font-family: "Yekan";
+  src: url("./Yekan-Font-master/Yekan.eot"); /* IE9 Compat Modes */
+  src: url("./Yekan-Font-master/Yekan.woff2") format("woff2"), url("./Yekan-Font-master/Yekan.woff") format("woff"), url("./Yekan-Font-master/Yekan.otf") format("opentype"), url("./Yekan-Font-master/Yekan.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-display: auto;
+}
+* {
+  box-sizing: border-box;
+  font-family: Yekan;
+}
+
+body {
+  background: url("../../img/wave.png") no-repeat fixed;
+  background-position: top right;
+  background-size: 55% 85%;
+}
+body header {
+  display: flex;
+  justify-content: center;
+}
+body header nav {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  flex-wrap: wrap;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+}
+body header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+  align-items: baseline;
+}
+body header nav ul li {
+  text-align: center;
+}
+body header nav ul li a {
+  font-family: Yekan;
+  text-decoration: none;
+  color: black;
+}
+body header nav #right-ul {
+  flex: 50%;
+  justify-content: flex-end;
+}
+body header nav #right-ul li:first-child {
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+}
+body header nav #left-ul {
+  flex: 30%;
+  justify-content: flex-end;
+}
+body header nav #left-ul #start-course-button {
+  border-radius: 15px;
+  background-color: white;
+  border-color: #fbbc58;
+  padding: 0.2rem 0.7em;
+}
+body header nav #left-ul #enter {
+  padding-right: 1em;
+  border-right: 2px solid #fbbc58;
+}
+body #main {
+  display: flex;
+  justify-content: center;
+}
+body #main .container {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body #main .container #right-main #buttons-container {
+  display: flex;
+  position: relative;
+}
+body #main .container #right-main #buttons-container .buttons {
+  display: flex;
+  position: absolute;
+  background-color: #333745;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  padding: 0.8em 1.5em;
+}
+body #main .container #right-main #buttons-container #b1 {
+  left: 10%;
+  transform: translateY(2.5rem);
+}
+body #main .container #right-main #buttons-container #b2 {
+  left: 50%;
+  transform: translateX(-50%);
+}
+body #main .container #right-main #buttons-container #b3 {
+  right: 10%;
+  transform: translateY(2.5rem);
+}
+body #main .container #right-main #programmer {
+  width: 90%;
+  height: 90%;
+  padding-top: 10%;
+}
+body #main .container #left-main {
+  align-self: center;
+  text-align: center;
+  position: relative;
+}
+body #main .container #left-main h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+body #main .container #left-main p {
+  font: 1.2rem Yekan;
+  color: grey;
+}
+body #main .container #left-main button#free-start-button {
+  background-color: #fbbc58;
+  color: #333745;
+  border: none;
+  border-radius: 15px;
+  padding: 0.8em 1.2em;
+  font: bold 1.2rem Yekan;
+}
+body #main .container #left-main #box-image img {
+  position: absolute;
+  z-index: -3;
+  opacity: 0.3;
+  -webkit-animation: move 5s ease-in infinite;
+          animation: move 5s ease-in infinite;
+}
+body #main .container #left-main #box-image #i1 {
+  left: 2.2em;
+  bottom: 2.5em;
+}
+body #main .container #left-main #box-image #i2 {
+  right: 1em;
+  top: 2em;
+}
+body #main .container #left-main #box-image #i3 {
+  right: 1.4em;
+  bottom: 0.8em;
+}
+@-webkit-keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    background: url("../../img/wave.png") no-repeat fixed;
+    background-position: top right;
+    background-size: 55% 65%;
+  }
+  body nav #right-ul,
+body nav #left-ul {
+    flex: 100% !important;
+    justify-content: center !important;
+  }
+  body #left-main h1 {
+    font-size: 2.5rem !important;
+  }
+  body #left-main p {
+    font: 1.2rem Yekan !important;
+  }
+}/*# sourceMappingURL=style.css.map */
